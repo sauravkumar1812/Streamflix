@@ -1,22 +1,9 @@
-import { useState, useEffect } from "react";
-import "./App.css";
+import React from "react";
 
 const App = () => {
-  const [counter, setCounter] = useState(0);
-  useEffect(() => {
-   alert('You Change the counter to'+ counter)
-  }, [counter]);
-  return (
-    <div className="App">
-      <button onClick={() => setCounter((prevcount) => prevcount - 1)}>
-        -
-      </button>
-      <h1>{counter}</h1>
-      <button onClick={() => setCounter((prevcount) => prevcount + 1)}>
-        +
-      </button>
-    </div>
+  return(
+    <h1>APP</h1> 
   );
-};
+}
 
 export default App;

@@ -1,15 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 const App = () => {
-  const  [counter,setCounter] = useState(0);
+  const [counter, setCounter] = useState(0);
+  useEffect(() => {
+   alert('You Change the counter to'+ counter)
+  }, [counter]);
   return (
     <div className="App">
-       <button onClick={()=>setCounter((prevCount)=>)}>-</button>
-       <h1>
-        {counter}
-       </h1>
-       <button onClick={()=>alert('clicked')}>+</button>
+      <button onClick={() => setCounter((prevcount) => prevcount - 1)}>
+        -
+      </button>
+      <h1>{counter}</h1>
+      <button onClick={() => setCounter((prevcount) => prevcount + 1)}>
+        +
+      </button>
     </div>
   );
 };

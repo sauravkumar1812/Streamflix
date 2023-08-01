@@ -1,4 +1,6 @@
 import React from "react";
+// 9682e42a
+const API_URL ='http://www.omdbapi.com?apikey= 9682e42a';
 
 const App = () => {
   return(
@@ -7,3 +9,4 @@ const App = () => {
 }
 
 export default App;
+  

@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 // 9682e42a
+import './App.css';
+import SearchIcon from './search.svg';
 const API_URL ="http://www.omdbapi.com?apikey=9682e42a";
 
 const App = () => {
@@ -14,7 +16,9 @@ const App = () => {
     searchMovies('Spiderman');
   },[]);
   return(
-    <h1>HII</h1> 
+    <div className="app">
+      <h1>StreamFlix</h1>
+    </div>
   );
 }
 
